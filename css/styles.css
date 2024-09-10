@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+/* font-family: "Golos Text", sans-serif;
+font-weight: <weight>; */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/* font-family: "Merriweather", serif;
+font-weight: 400; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Montserrat", sans-serif;
+font-weight: <weight>; */
+
+body {
+  position: relative;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  /* max-width: 1222px; */
+  padding: 0 72px;
+}
+
+.header .container {
+  z-index: 7;
+}
+
+.logotype {
+  margin-top: 26px;
+  margin-bottom: 62px;
+}
+
+.header {  
+  background: url('./img/main-new.png') no-repeat;
+  background-size: cover; 
+  background-position: center; 
+  width: 100%; 
+  height: 100vh; 
+  margin: 0;  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;  
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+h1,h2,h3 {
+  margin-top: 62px;
+  color: rgb(49, 49, 49);
+  font-family: "Merriweather", serif;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0px;
+}
+
+
+.header_title2 {
+  text-align: center;
+  padding: 0px 91px;
+}
+
+.header_title3 {
+  text-align: right;
+  margin-bottom: 24px;
+  padding-left: 75px;
+}
+
+.paragraph {
+  font-family: "Golos Text";
+  font-variant: sans-serif;
+  font-weight: 400;
+   color: #313131;
+   font-size: 18px;
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.buttons {
+  margin-bottom: 124px;
+  display: flex;
+}
+
+.btn {
+width: 263px;
+height: 72px;
+border-radius: 66px;
+font-family: "Golos Text";
+font-weight: 500;
+font-size: 16px;
+text-align: center;
+padding: 20px;
+transition: all .3s linear;
+}
+
+.header-button {
+  background: #313131;
+  color: rgb(255,255,255);
+  margin-right: 16px;
+  box-shadow: 0 0 0 2px rgb(31, 31, 31);
+}
+
+.disabled-button {
+  box-shadow: 0 0 0 2px rgb(31, 31, 31);
+  color: #313131;
+}
+
+.btn:hover {
+  background: rgb(251, 206, 81);
+  color: rgb(31, 31, 31);
+  box-shadow: 0 0 0 2px rgb(251, 206, 81);
+}
+
+
+.buttons:has(.header-button:hover) .disabled-button {
+  background: #313131;
+  color: rgb(255,255,255);
+}
+
+.buttons:has(.disabled-button:hover) .header-button {
+  background: #313131;
+  color: rgb(255,255,255);
+}
+
+
+ .run-line {
+  background-color: rgb(245, 73, 50);
+  width: 100%;
+  height: 60px;
+  margin-bottom: 80px;
+  z-index: 5;
+  padding: 18px 12px 18px 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+} 
+
+div .text {
+  color: #fff;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: right;
+  line-height: 110%;
+  animation: marquee 50s infinite linear;
+  display: inline-block;
+}
+
+
+@keyframes marquee {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+.circle {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.support-chess {
+display: flex;
+justify-content: space-between;
+padding-left: 0; 
+padding-right: 0;
+margin-bottom: 64px;
+}
+
+div.support-chess-title1 {
+  font-size: 36px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 135%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;  
+  margin-right: auto;
+}
+
+.red-text {
+  color: rgb(245, 73, 50);
+  font-weight: 700;
+}
+
+.chess-tournament {
+  margin-left: 64px;
+  object-fit: contain;
+}
+
+.chess-session {
+display: flex;
+justify-content: space-between;
+margin-bottom: 165px;
+}
+
+.grossmaster {
+  width: 609px;
+  height: 528px;
+  margin-right: auto;
+}
+
+.session-title {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  text-align: left;
+  line-height: 135%;
+  flex-wrap: wrap;
+  margin-bottom: 61px;
+}
+
+.session-play {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.first-td {
+  border-right: 2px solid rgb(208, 208, 208);
+  height: 56px;
+  width: 306px;
+  padding: 10px 10px 10px 0px;
+  color: rgb(49, 49, 49);
+  opacity: 0.7;
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: left;
+}
+
+.second-td {
+  height: 56px;
+  width: 498px;
+  padding: 10px;
+  color: rgb(49, 49, 49);
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: left;
+}
+
+.bottom {
+  border-bottom: 2px solid rgb(208, 208, 208);  
+}
+
+.line-through {
+  text-decoration: line-through 2px solid rgb(245, 73, 50);
+  margin-right: 11px;
+}
+
+.table {
+  border-collapse: collapse;
+  margin-bottom: 48px;
+}
+
+.adress-to-administration {
+  color:rgb(48, 87, 162);
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: left;
+}
+
+.padding-t {
+padding-top: 0;
+vertical-align: top;
+height: 40px;
+}
+
+.padding-b {
+  padding-bottom: 0;
+  vertical-align: bottom;
+  height: 40px;
+}
+
+.title-tournament {
+  font-family: "Merriweather", serif;
+  font-size: 54px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.stages-wrapper {
+  margin-bottom: 54px;
+}
+
+.titles-sources-wrapper {
+  display: flex;
+}
+
+.sources {
+  color:rgb(48, 87, 162);
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-weight: 400; 
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 7.3px;
+  margin-bottom: 10px; 
+}
+
+.grid { 
+  display: grid;  
+  border: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid > * {
+  background: url(./img/header-drafts/frame4.png) no-repeat;
+  background-size: cover;
+  box-shadow: 5px 4px 12.7px 0px rgba(0, 0, 0, 0.25);
+  opacity: 0.8;
+  width: 100%; 
+  height: 100%;
+}
+
+.transformation-stages {
+  margin-bottom: 54px;
+}
+
+.item3 {
+  grid-row: span 2;
+  background-image: url('./img/header-drafts/frame3.png');
+}
+
+.item6 {
+  background-image: url('./img/header-drafts/frame6.png');
+}
+
+.item7 {
+  grid-column: span 2;
+  background-image: url('./img/header-drafts/frame7.png');
+  position: relative; 
+}
+
+.round {
+  border-radius: 60px;
+  background: rgb(255, 255, 255);
+  width: 36px;
+  height: 36px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  color: rgb(49, 49, 49);
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.stage {
+  color: rgb(49, 49, 49);
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  text-align: left;
+  white-space: wrap;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto; 
+  justify-content: center;
+  padding: 20px;
+}
+
+.stage7 {
+  margin-right: 290px;
+}
+
+.plane {
+  position: absolute;
+  width: 560px;
+  height: 270px;
+  top: -115px;
+  left: 475px;
+  filter: contrast(170%);
+}
+
+.grid {
+  margin-bottom: 200px;
+}
+
+.participants {
+  margin-bottom: 135px;
+}
+
+.participants .title-tournament {
+  margin-bottom: 60px;
+}
+
+.participants-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.slider-counter {
+  margin-left: 14px;
+  margin-right: 14px;
+  color: rgb(49, 49, 49);
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.arrow {
+width: 44px;
+height: 44px;
+border-radius: 60%;
+background-color: rgb(49, 49, 49);
+vertical-align: center;
+cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1330px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 10px);
+  gap: 15px;
+  margin-bottom: 135px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar {
+display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto; 
+}
+
+.carousel.dragging .slider-item {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel .slider-item {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  cursor: pointer;
+  height: 470px;
+ }
+
+ .slider-item img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  margin-bottom: 28px;
+}
+
+.slider-item h2 {
+    color: rgb(49, 49, 49);
+    font-family: "Golos Text", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 10px; 
+    text-transform: none;
+}
+
+.slider-item span {
+  margin-bottom: 20px;
+  color: rgb(49, 49, 49);
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  opacity: 0.6; 
+}
+
+.slider-item .more-details {
+  width: 114px;
+  height: 40px;
+  border: 1px solid rgb(48, 87, 162);
+  border-radius: 62px;
+  padding: 9px;
+  color: rgb(48, 87, 162);
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  display: block;
+  margin: 0 auto;
+}
+
+.slider-item .more-details:hover {
+  background-color: rgb(48, 87, 162);
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+
+
+
+
+.run-line-last {
+  background-color: rgb(245, 73, 50);
+   
+  width: 100%;
+  height: 60px;
+ 
+  padding: 18px 12px 18px 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.footer-info {
+  height: 9.375rem;
+  width: 100%;
+  background-color: rgb(233, 222, 212);
+}
+
+.footer-info p {
+  color: rgb(49, 49, 49);
+  font-family:  "Golos Text", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 0.6;
+  padding-top: 2.5rem;
+  padding-bottom: 4.5rem;
+}
+
+
+@media screen and(max-width: 1200px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+  .city-chess {
+    position: absolute;
+   
+    object-fit: cover;
+    z-index: 5;
+    
+  }
+}
+
+
+
+
+@media screen and(max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
